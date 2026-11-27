@@ -1,0 +1,31 @@
+pkgbase = cros-libsegmentation
+	pkgdesc = ChromiumOS system properties library (libsegmentation)
+	pkgver = 0.0.1
+	pkgrel = 1
+	url = https://chromium.googlesource.com/chromiumos/platform2/+/HEAD/libsegmentation
+	arch = x86_64
+	license = BSD-3-Clause
+	makedepends = clang
+	makedepends = cros-common-mk
+	makedepends = git
+	makedepends = gn
+	makedepends = lld
+	makedepends = llvm
+	makedepends = compiler-rt
+	makedepends = ninja
+	makedepends = pkgconf
+	makedepends = python
+	depends = cros-libchrome
+	depends = cros-libbrillo
+	depends = cros-libcrossystem
+	depends = cros-rootdev
+	depends = gcc-libs
+	depends = glibc
+	depends = protobuf
+	options = !lto
+	source = platform2::git+https://chromium.googlesource.com/chromiumos/platform2.git#branch=main
+	source = 0001-arch-portability.patch
+	sha256sums = SKIP
+	sha256sums = SKIP
+
+pkgname = cros-libsegmentation
